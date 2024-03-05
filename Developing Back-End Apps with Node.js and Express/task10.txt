@@ -1,0 +1,1 @@
+async function getAllBooks() {   try {     const response = await axios.get(baseUrl);     return response.data;   } catch (error) {     console.error('Error fetching all books:', error);     return [];    } } 

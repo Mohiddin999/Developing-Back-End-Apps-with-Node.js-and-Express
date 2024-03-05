@@ -1,0 +1,1 @@
+function searchByAuthor(author) {   try {     const response = await axios.get(`${baseUrl}?author=${author}`);     return response.data;   } catch (error) {     console.error('Error fetching books by author:', error);     return [];    } }
